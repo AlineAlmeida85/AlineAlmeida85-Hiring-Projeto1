@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0a4da708d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Aline Almeida</title>    
+</head>
+<body>
+    <header>
+        <h1>Aline Almeida</h1>
+        <ul>
+            <li>
+                <a href="https://github.com/AlineAlmeida85" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="mailto:aasouza20@gmail.com" target="_blank">Email</a>
+            </li>
+            <li>
+                <a href="https://wa.me/11990071118" target="_blank">Whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <div>
+                    <img src="img/aline.png" alt="" id="foto">
+                </div>                
+                <h5>Full Stack Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+            <div id="about" style="display: none;">
+                <p>A educação realmente nos transforma, estou tendo a oportunidade de cursar Sistemas de Informação e, com certeza, esse grande passo realmente mudou a minha vida, minha realidade social e econômica e minha forma de encarar o mundo! Me dedico muito aos estudos mas também a minha casa e minha família. Amo o que estou aprendendo, amo essa minha nova realidade e amo pensar no meu futuro e me imaginar num bom emprego.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu Contato</p>
+                </div>                
+                <form action="">                    
+                    <input type="text" placeholder="Seu email... :)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
